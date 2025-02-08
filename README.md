@@ -33,12 +33,27 @@ The project aims to extract insights such as **top-selling months, category-wise
 
 ## 📊 Power BI Dashboard  
 
-The **Power BI report** contains:  
-✔️ **Total Sales Overview** (KPI Cards, Trends)  
-✔️ **Category-Wise Performance** (Bar Charts, Pie Charts)  
-✔️ **Top Customers** (Ranked List, Filters)  
-✔️ **Time-Based Sales Analysis** (Hour-wise Heatmap, Sales by Shift)  
+The **Power BI report** contains the following visualizations:  
+
+✔️ **Top Customers Table** 📋  
+   - Displays the top customers based on total sales  
+
+✔️ **Pie Chart: Customer Distribution by Shift** 🕒  
+   - Visualizes the percentage of customers making purchases during different shifts  
+   - **Shifts**:  
+     - 🟢 **Morning** (Before 12 PM)  
+     - 🔵 **Afternoon** (Between 12 PM - 5 PM)  
+     - 🔴 **Evening** (After 5 PM)  
+
+✔️ **KPI Cards** 📊  
+   - **Total Sales** 💰  
+   - **Average Sales** 📈  
+
+✔️ **Bar Graph: Sales by Category, Gender & Count of Sales** 📊  
+   - Compares sales performance across different **product categories** based on **gender**  
+   - Displays **total sales amount** and **count of sales** for each category  
 
 ---
+
 
 
