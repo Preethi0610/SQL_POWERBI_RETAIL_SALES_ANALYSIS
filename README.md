@@ -1,59 +1,32 @@
-# 📊  SQL_POWERBI_RETAIL_SALES_ANALYSIS
+# SQL_POWERBI_RETAIL_SALES_ANALYSIS
 
-## 🔥 Overview  
-This project is a **Sales Analysis** using **SQL** for data extraction and **Power BI** for visualization.  
-The dataset includes **sales transactions** with details like category, quantity, customer demographics, and timestamps.  
-The project aims to extract insights such as **top-selling months, category-wise performance, customer trends, and high-value transactions**.
+## Overview
+This project analyzes retail sales transactions using SQL for data querying and Power BI for reporting. The dataset contains transaction level records including product category, quantity, customer attributes (age and gender), order time, and sales value. The objective is to generate reproducible analytical outputs covering sales performance, customer behavior, and time based patterns.
 
----
+## Project structure
+- SQL scripts used to generate all analytical results
+- Power BI report file containing the final dashboard
+- Raw dataset used for analysis
+- README documenting queries and visuals
 
-## 📂 Project Structure  
+## SQL analysis
+Sales analysis
+- Retrieve all transactions for the date 2022-11-05
+- Compute total sales per category
+- Identify transactions with total_sale > 1000
 
+Customer analysis
+- Calculate the average age of customers who purchased Beauty products
+- Count transactions by gender for each product category
+- Count distinct customers per category
 
----
+Performance analysis
+- Identify the highest revenue month for each year
+- Rank the top five customers by total sales value
+- Classify orders into time shifts (Morning, Afternoon, Evening) and count orders per shift
 
-## 🛠️ SQL Queries & Insights  
-
-### 🔹 1. **Sales Overview**  
-   - Retrieve all sales on `'2022-11-05'`  
-   - Calculate total sales (`total_sale`) for each category  
-   - Find transactions where `total_sale > 1000`  
-
-### 🔹 2. **Customer Insights**  
-   - Average age of customers who purchased 'Beauty' products  
-   - Count of transactions by gender in each category  
-   - Unique customers per category  
-
-### 🔹 3. **Performance Analysis**  
-   - Best-selling month for each year  
-   - Top 5 customers by total sales  
-   - Number of orders in different shifts (Morning, Afternoon, Evening)  
-
----
-
-## 📊 Power BI Dashboard  
-
-The **Power BI report** contains the following visualizations:  
-
-✔️ **Top Customers Table** 📋  
-   - Displays the top customers based on total sales  
-
-✔️ **Pie Chart: Customer Distribution by Shift** 🕒  
-   - Visualizes the percentage of customers making purchases during different shifts  
-   - **Shifts**:  
-     - 🟢 **Morning** (Before 12 PM)  
-     - 🔵 **Afternoon** (Between 12 PM - 5 PM)  
-     - 🔴 **Evening** (After 5 PM)  
-
-✔️ **KPI Cards** 📊  
-   - **Total Sales** 💰  
-   - **Average Sales** 📈  
-
-✔️ **Bar Graph: Sales by Category, Gender & Count of Sales** 📊  
-   - Compares sales performance across different **product categories** based on **gender**  
-   - Displays **total sales amount** and **count of sales** for each category  
-
----
-
-
-
+## Power BI dashboard
+- Table of top customers ranked by total sales
+- Customer distribution by purchase shift (Morning, Afternoon, Evening)
+- KPI cards for total sales and average sales
+- Bar chart showing sales amount and transaction count by category and gender
