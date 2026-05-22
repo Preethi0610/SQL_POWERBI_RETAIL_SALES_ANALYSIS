@@ -1,32 +1,43 @@
 # SQL_POWERBI_RETAIL_SALES_ANALYSIS
 
+> Turning rows of receipts into the kind of insights that actually pay rent.
+
 ## Overview
-This project analyzes retail sales transactions using SQL for data querying and Power BI for reporting. The dataset contains transaction level records including product category, quantity, customer attributes (age and gender), order time, and sales value. The objective is to generate reproducible analytical outputs covering sales performance, customer behavior, and time based patterns.
+A retail sales analytics project that uses **SQL** to do the heavy lifting and **Power BI** to make the numbers presentable in polite company. The dataset captures transaction-level activity product category, quantity, customer age and gender, order time, and sale value and the goal is to produce clean, reproducible answers to the questions every retail team eventually asks: *who's buying, what's selling, and when?*
 
-## Project structure
-- SQL scripts used to generate all analytical results
-- Power BI report file containing the final dashboard
-- Raw dataset used for analysis
-- README documenting queries and visuals
+## Project Structure
+- **SQL scripts** - every query behind the analysis, ready to re-run
+- **Power BI report** - the final dashboard (`.pbix`)
+- **Raw dataset** - the source of truth, untouched
+- **README** - this file, doing its best to explain everything above
 
-## SQL analysis
-Sales analysis
-- Retrieve all transactions for the date 2022-11-05
-- Compute total sales per category
-- Identify transactions with total_sale > 1000
+## SQL Analysis
 
-Customer analysis
-- Calculate the average age of customers who purchased Beauty products
-- Count transactions by gender for each product category
-- Count distinct customers per category
+**Sales**
+- Pull all transactions for `2022-11-05` (a perfectly ordinary Saturday, statistically speaking)
+- Total sales by category
+- High-value transactions where `total_sale > 1000` the customers we want to keep
 
-Performance analysis
-- Identify the highest revenue month for each year
-- Rank the top five customers by total sales value
-- Classify orders into time shifts (Morning, Afternoon, Evening) and count orders per shift
+**Customers**
+- Average age of customers buying **Beauty** products
+- Transaction count by gender within each category
+- Distinct customer count per category
 
-## Power BI dashboard
-- Table of top customers ranked by total sales
-- Customer distribution by purchase shift (Morning, Afternoon, Evening)
-- KPI cards for total sales and average sales
-- Bar chart showing sales amount and transaction count by category and gender
+**Performance**
+- Highest-revenue month per year the wins worth repeating
+- Top **5** customers by total sales value
+- Orders bucketed into **Morning / Afternoon / Evening** shifts, with counts per shift
+
+## Power BI Dashboard
+- **Top Customers** table — ranked by total sales
+- **Purchase Shift** breakdown — morning people vs. evening shoppers
+- **KPI Cards** — total sales and average sale value, front and center
+- **Category × Gender** bar chart — sales amount and transaction count, side by side
+
+## Dashboard Preview
+
+<img width="1338" height="740" alt="Retail Sales Dashboard" src="https://github.com/user-attachments/assets/7ae40a6f-a509-4c41-a0ea-4529bfcd101d" />
+
+*My first attempt at building a dashboard static for now, but a solid foundation. Future iterations will bring in slicers, drill-throughs, and interactivity.*
+
+
